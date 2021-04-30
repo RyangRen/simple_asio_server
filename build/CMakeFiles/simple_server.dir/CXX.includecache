@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/connection.hpp
+iostream
+-
+sstream
+-
+thread
+-
+string
+-
+vector
+-
+asio.hpp
+-
+
+../include/server.hpp
+iostream
+-
+thread
+-
+asio.hpp
+-
+connection.hpp
+../include/connection.hpp
+
+/home/yang/asio_test/simple_asio_server/simple_server.cpp
+iostream
+-
+chrono
+-
+csignal
+-
+thread
+-
+server.hpp
+/home/yang/asio_test/simple_asio_server/server.hpp
+
